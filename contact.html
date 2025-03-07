@@ -22,7 +22,7 @@
         justify-content: space-between;
         align-items: center;
         gap: 20px;
-        margin-bottom: 100px;
+        margin-bottom: 10px;
         border-radius: 10px;
       }
       .tabs {
@@ -30,12 +30,12 @@
         align-items: center;
         justify-content: center;
         gap: 30px;
-        list-style: none; /* Removes bullet points */
-        padding: 0; /* Removes default padding */
+        list-style: none;
+        padding: 0;
         margin: 0;
       }
       .links {
-        text-decoration: none; /* Removes underline */
+        text-decoration: none;
         color: inherit;
       }
 
@@ -43,6 +43,73 @@
         font-family: "Oxygen", sans-serif;
         font-weight: 400;
         font-style: normal;
+      }
+    </style>
+    <style>
+      .container {
+        width: 100%;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-bottom: 100px;
+      }
+
+      .contact-us {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+
+      /* Contact Form Styles */
+      .contact-form {
+        width: 100%;
+        max-width: 500px;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        text-align: left;
+      }
+
+      .contact-form label {
+        display: block;
+        font-weight: bold;
+        margin: 10px 0 5px;
+        font-family: "Oxygen", sans-serif;
+      }
+
+      .contact-form input,
+      .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        font-family: "Oxygen", sans-serif;
+        margin-bottom: 15px;
+      }
+
+      .contact-form input {
+        margin-right: 10px;
+      }
+
+      .contact-form button {
+        width: 100%;
+        background-color: #ffb433;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        font-family: "Oxygen", sans-serif;
+      }
+
+      .contact-form button:hover {
+        background-color: #e09b2d;
       }
     </style>
   </head>
@@ -79,5 +146,46 @@
       </div>
       <div style="color: white" class="oxygen-regular">Log In</div>
     </nav>
+    <section class="container">
+      <div class="contact-us">
+        <h1 class="oxygen-regular" style="font-size: 3rem; margin-bottom: 40px">
+          Contact Us
+        </h1>
+
+        <form class="contact-form">
+          <label for="name">Full Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            style="width: 480px"
+            required
+          />
+
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            style="width: 480px"
+            required
+          />
+
+          <label for="message">Your Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Write your message here..."
+            required
+            style="width: 480px"
+          ></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
   </body>
 </html>
