@@ -11,6 +11,62 @@
     />
     <title>BookMe</title>
     <style>
+      .container {
+        width: 100%;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-bottom: 100px;
+      }
+      .books-section {
+        width: 100%;
+        height: auto;
+        display: flex;
+        gap: 35px;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .book-card {
+        width: 300px;
+        height: auto;
+        padding: 20px;
+        background-color: white;
+        border-radius: 0.5rem;
+      }
+
+      .book-title {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 2px;
+        height: 100px;
+        width: 100%;
+      }
+
+      .view-details {
+        border: none;
+        background-color: #ffb433;
+        color: white;
+        text-align: center;
+        width: 100px;
+        height: 40px;
+        border-radius: 0.5rem;
+        cursor: pointer;
+      }
+      .view-details:hover {
+        background-color: #e6952b;
+      }
+
+      .image {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    </style>
+    <style>
       .navbar {
         width: 90%;
         height: 40px;
@@ -22,6 +78,8 @@
         justify-content: space-between;
         align-items: center;
         gap: 20px;
+        margin-bottom: 100px;
+        border-radius: 10px;
       }
       .tabs {
         display: flex;
@@ -77,5 +135,28 @@
       </div>
       <div style="color: white" class="oxygen-regular">Log In</div>
     </nav>
+
+    <section class="container">
+      <div class="books-section">
+        <div id="book2" class="book-card">
+          <div
+            style="height: 255px; width: 100%; margin-bottom: 10px"
+            id="book2Image"
+          >
+            <img class="image" src="./assets/images/diary.jpg" />
+          </div>
+          <div class="book-title">
+            <p class="oxygen-regular" style="font-size: larger">
+              2025 Diary<br />
+              <span style="color: grey">Stationary R Us</span>
+            </p>
+          </div>
+          <p style="font-size: larger" class="oxygen-regular">R 119.00</p>
+          <a href="index.html"
+            ><button class="view-details">View Details</button></a
+          >
+        </div>
+      </div>
+    </section>
   </body>
 </html>
