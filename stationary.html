@@ -9,6 +9,11 @@
       href="https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css"
+    />
+
     <link rel="stylesheet" href="./styles.css" />
     <title>BookMe</title>
   </head>
@@ -43,7 +48,10 @@
           </li>
         </ul>
       </div>
-      <div style="color: white" class="oxygen-regular">Log In</div>
+      <div style="color: white" class="oxygen-regular icon-box">
+        <a href="index.html"> <i class="bx bx-cart cart-icon"></i></a>
+        <i class="bx bx-user profile-icon"></i>
+      </div>
     </nav>
 
     <section class="container">
@@ -63,6 +71,24 @@
           </div>
           <p style="font-size: larger" class="oxygen-regular">R 119.00</p>
           <a href="diary.html"
+            ><button class="view-details">View Details</button></a
+          >
+        </div>
+        <div id="book2" class="book-card">
+          <div
+            style="height: 255px; width: 100%; margin-bottom: 10px"
+            id="book2Image"
+          >
+            <img class="image" src="./assets/images/highlighters.jpg" />
+          </div>
+          <div class="book-title">
+            <p class="oxygen-regular" style="font-size: larger">
+              Highlighters<br />
+              <span style="color: grey">Stationary R Us</span>
+            </p>
+          </div>
+          <p style="font-size: larger" class="oxygen-regular">R 69.99</p>
+          <a href="highlighter.html"
             ><button class="view-details">View Details</button></a
           >
         </div>

@@ -3,8 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
@@ -13,8 +15,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css"
     />
+
     <link rel="stylesheet" href="./styles.css" />
-    <title>BookMe</title>
+    <title>Document</title>
   </head>
   <body style="background-color: #fbf8ef; min-height: 95vh; padding-top: 20px">
     <nav class="navbar">
@@ -33,7 +36,7 @@
             >
           </li>
           <li>
-            <a class="links" style="color: white" href="accessories.html"
+            <a class="links" style="color: #ffb433" href="accessories.html"
               >Accessories</a
             >
           </li>
@@ -41,7 +44,7 @@
             <a class="links" style="color: white" href="about.html">About</a>
           </li>
           <li>
-            <a class="links" style="color: #ffb433" href="contact.html"
+            <a class="links" style="color: white" href="contact.html"
               >Contact</a
             >
           </li>
@@ -52,45 +55,35 @@
         <i class="bx bx-user profile-icon"></i>
       </div>
     </nav>
-    <section class="container">
-      <div class="contact-us">
-        <h1 class="oxygen-regular" style="font-size: 3rem; margin-bottom: 40px">
-          Contact Me
-        </h1>
-
-        <form class="contact-form">
-          <label for="name">Full Name</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Enter your name"
-            style="width: 480px"
-            required
-          />
-
-          <label for="email">Email Address</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Enter your email"
-            style="width: 480px"
-            required
-          />
-
-          <label for="message">Your Message</label>
-          <textarea
-            id="message"
-            name="message"
-            rows="5"
-            placeholder="Write your message here..."
-            required
-            style="width: 480px"
-          ></textarea>
-
-          <button type="submit">Send Message</button>
-        </form>
+    <a href="accessories.html"> <button class="back-button">Back</button></a>
+    <section class="details-container">
+      <div class="details">
+        <div class="sub-section">
+          <img src="./assets/images/book_light.jpg" class="image" />
+        </div>
+        <div class="sub-section specifications">
+          <p style="font-size: x-large; font: bold" class="oxygen-regular">
+            R 105.00
+          </p>
+          <p style="color: grey" class="oxygen-regular">Average Rating: 4/5</p>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <p class="book-description oxygen-regular">
+            Illuminate your reading experience with this sleek and portable book
+            light. Designed for ultimate convenience, it provides a soft, warm
+            glow that reduces eye strain while adding a cozy ambiance to your
+            late-night reading sessions.
+          </p>
+          <div class="cta">
+            <button class="buttons">Add To Cart</button>
+            <a href="checkout.html">
+              <button class="buttons">Checkout</button></a
+            >
+          </div>
+        </div>
       </div>
     </section>
   </body>
