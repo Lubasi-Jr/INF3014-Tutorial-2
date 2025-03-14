@@ -348,3 +348,9 @@
   height: 100%;
   object-fit: contain;
 }
+/* Cart Page styles */
+.cart-container {
+  width: 80%;
+  height: 60%;
+  margin: auto;
+}
