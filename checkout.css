@@ -1,5 +1,15 @@
-.checkout-image {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+@media screen and (max-width: 767px) {
+  .checkout-image {
+    width: 95%;
+    height: 500px;
+    object-fit: contain;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .checkout-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
 }
